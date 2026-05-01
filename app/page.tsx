@@ -31,18 +31,16 @@ export default function HomePage() {
       <section className="relative">
         <div className="relative mx-auto flex min-h-[80vh] w-full max-w-7xl flex-col px-6 pb-16 pt-8 lg:px-10">
           <header className="flex items-center justify-between py-4">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="WinSim AI logo"
-                width={36}
-                height={36}
+                width={240}
+                height={120}
                 priority
-                className="h-9 w-9 rounded-lg object-cover"
+                className="h-16 w-auto object-contain"
+                style={{ mixBlendMode: "screen" }}
               />
-              <span className="text-sm font-medium tracking-[0.24em] text-slate-300 uppercase">
-                WinSim AI
-              </span>
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <Link
