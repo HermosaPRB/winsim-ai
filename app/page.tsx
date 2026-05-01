@@ -39,7 +39,6 @@ export default function HomePage() {
                 height={120}
                 priority
                 className="h-16 w-auto object-contain"
-                style={{ mixBlendMode: "screen" }}
               />
             </div>
             <div className="flex flex-wrap items-center gap-2">
