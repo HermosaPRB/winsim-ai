@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Route } from "next";
 import dynamic from "next/dynamic";
@@ -31,7 +32,14 @@ export default function HomePage() {
         <div className="relative mx-auto flex min-h-[80vh] w-full max-w-7xl flex-col px-6 pb-16 pt-8 lg:px-10">
           <header className="flex items-center justify-between py-4">
             <div className="flex items-center gap-3">
-              <div className="h-3 w-3 rounded-full bg-emerald-400" />
+              <Image
+                src="/logo.png"
+                alt="WinSim AI logo"
+                width={36}
+                height={36}
+                priority
+                className="h-9 w-9 rounded-lg object-cover"
+              />
               <span className="text-sm font-medium tracking-[0.24em] text-slate-300 uppercase">
                 WinSim AI
               </span>
