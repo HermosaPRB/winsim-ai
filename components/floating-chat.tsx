@@ -17,9 +17,6 @@ export function FloatingChat() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const showChat = pathname?.startsWith('/simulate') ?? false;
-  if (!showChat) return null;
-
   useEffect(() => {
     if (messagesEndRef.current) {
       messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
@@ -90,6 +87,9 @@ export function FloatingChat() {
       setIsLoading(false);
     }
   };
+
+  const showChat = pathname?.startsWith('/simulate') ?? false;
+  if (!showChat) return null;
 
   return (
     <>
