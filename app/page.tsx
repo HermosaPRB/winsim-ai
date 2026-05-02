@@ -66,9 +66,10 @@ export default function HomePage() {
                 I replayed the judging 500 times to see who actually wins.
               </h1>
               <p className="text-reveal text-reveal-delay-2 mt-6 max-w-2xl text-lg leading-8 text-slate-400">
-                WinSim AI scores every Codex × Handshake submission against a 5-dimension rubric using
-                GPT-4o anchored to live-site evidence, then re-runs a 3-judge panel 500 times to
-                surface who actually wins under judge variance.
+                WinSim AI simulates the projected winner from all of the active
+                &ldquo;Showcased projects&rdquo; on Handshake. GPT-4o judges every entry on a
+                5-dimension rubric anchored to live-site evidence, then a 3-judge panel re-runs
+                the field 500 times under judge variance.
               </p>
 
               <div className="text-reveal text-reveal-delay-3 mt-8 grid grid-cols-2 gap-3 md:grid-cols-3">
